@@ -22,7 +22,7 @@ do{
     cin>>food; 
      if(numItems<5)
       {
-       food=list[numItems];
+       list[numItems]=food;
        numItems++;
       }
       else
@@ -32,5 +32,14 @@ do{
   }
   }
   while( input!='Q'&&input!='q' );
+  if(input=='Q'||input=='q')
+  {
+    cout<<"==ITEMS TO BUY=="<<endl;
+    cout<<"1 "<<list[0]<<endl;
+    cout<<"2 "<<list[1]<<endl;
+    cout<<"3 "<<list[2]<<endl;
+    cout<<"4 "<<list[3]<<endl;
+    cout<<"5 "<<list[4]<<endl;
+  }
   return 0;
 }
