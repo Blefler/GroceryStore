@@ -14,10 +14,10 @@ string food;
 do
 {
 cout<<"\n==GROCERY LIST MANAGER==";
-cout<<"\nENTER YOUR CHOICE: ";
+cout<<"\nEnter your choice: ";
 cout<<"\n (A)dd an item";
 cout<<"\n (Q)uit";
-cout<<"\nYour Choice (A/Q): ";
+cout<<"\nYour choice (A/Q): ";
 cin>>input;
 
   if(input=='A'||input=='a')
@@ -32,9 +32,10 @@ while(input!='Q'&&input!='q');
 
 if(list.size()>0)
 {
+  cout<<"==ITEMS TO BUY=="<<endl;
   for(int i=0; i < list.size(); i++)
   {
-  cout<<list[i]<<endl;
+  cout<<i+1<<" "<<list[i]<<endl;
   }
 }
 else
